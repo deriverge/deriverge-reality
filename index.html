@@ -1,13 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="cs">
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>deriverge | realitní specialisté</title>
-    <meta name="description" content="deriverge | moderní realitní kancelář poskytující profesionální služby v oblasti prodeje a pronájmu nemovitostí. Nabízíme individuální přístup, rychlé vyřízení a maximální spokojenost klientů. Kontaktujte nás pro bezplatnou konzultaci.">
-</head>
-<body>
-    <h1>deriverge</h1>
-    <h2>realitní specialisté</h2>
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,700&family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <title>deriverge | realitní kancelář</title>
+    <meta name="description" content="Budeme Vašim spolehlivým partnerem ve světě realit. Profesionální služby s osobním přístupem a důrazem na kvalitu.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="facebook-domain-verification" content="k0frezjjnd4cwrl7gavolyb7qtavy4" />
+  </head>
+
+  <body>
+    <div id="maxWidthContainer">
+      <!-- Obsah stránky zde -->
+      <div class="whiteClona"></div>
+      <section>
+        <div class="contactBar">
+          <div class="borderContactBar">
+            <ul class="contactsTopBar">
+              <li id="telContactBar"><a href="phone:+420777849095">777 849 095</a></li>
+              <li id="mailContactBar"><a href="mailto:reality@deriverge.cz">reality@deriverge.cz</a></li>
+            </ul>
+          </div>
+          <div class="borderSocialsBar">
+            <ul class="socialsTopBar">
+              <li id="fbContactBar"><a href="https://www.facebook.com/profile.php?id=61561862822587"></a></li>
+              <li id="igContactBar"><a href="https://www.instagram.com/erika_cagankova_reality/"></a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="top">
+        <div id="fixmenu">
+          <div id="center-logo-pc">
+            <a href="https://www.deriverge.cz/"><img id="logo-pc" src="/pictures/deriverge-logo-rk-final.png"></a>
+          </div>
+          <div id="center-logo-mobile">
+            <a href="https://www.deriverge.cz/"><img id="logo-mobile" src="/pictures/deriverge-logo-rk-final.png"></a>
+          </div>
+          <nav id="navigation">
+            <ul id="menu-pc">
+              <li class="odkazmenu"><a href="#sluzby">Služby</a></li>
+              <li class="odkazmenu"><a href="#footer">Kontakty</a></li>
+            </ul>
+            <div id="center-menu-mobile">
+              <div id="menu-mobile-button-container">
+                <button onclick="menuClicked(); menuButtonClicked(); showMobileMenu()" id="menu-mobile-button">Zobrazit menu</button>
+              </div>
+              <ul id="menu-mobile">
+                <li class="odkazmenu"><a href="#sluzby">Služby</a></li>
+                <li class="odkazmenu"><a href="#blog">Blog</a></li>
+                <li class="phone-ikon"><img id="logo-phone" src="/pictures/phonelogo.png"></li>
+                <li class="phone-menu"><a href="tel:+420777849095">+420 777 849 095</a></li>
+                <li class="phone-ikon"><img id="logo-phone" src="/pictures/email-logo.png"></li>
+                <li class="phone-menu odkazmenu"><a href="mailto:reality@deriverge.cz">reality@deriverge.cz</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="parrentsHeight">
+          <!-- Hlavní obrázek nebo fotografie -->
+        </div>
+      </section>
+      <div id="justifyContent">
+        <!--<h1 id="nadpis-main-mobile"><br> realitní makléřka...</h1>-->
+      </div>
+      <main class="odstavec-container-full-width">
+        <div class="odstavec-container">
+          <div id="odstavecjedna"></div>
+          <p id="prvniOdstavec">
+            Našim klientům přinášíme nejen špičkové služby v oblasti koupě, prodeje či pronájmu nemovitostí, ale také pocit bezpečí a důvěry.
+            Zakládáme si na transparentnosti komunikace, díky čemuž se můžete spolehnout, že budete o každém kroku vašeho realitního procesu perfektně informováni. Naše práce je pro nás vášní a každý nový projekt přijímáme s nadšením ale i respektem. Našim cílem je najít to nejlepší řešení pro vás.
+            <br><br>
+            Ať už hledáte nový domov pro vaši rodinu, chcete prodat svou nemovitost za nejlepších podmínek nebo hledáte investiční příležitost, jsme zde, abychom vám pomohli vaše sny proměnit ve skutečnost. Díky naší hluboké znalosti trhu, odbornosti a vřelému přístupu se staneme partnery na cestě za vašimi sny.
+          </p>
+        </div>
+      </main>
+
+      <!-- Filtrační sekce -->
+      <section id="filter-section">
+        <form id="property-filter">
+          <select id="filter-type">
+            <option value="all">Všechny typy</option>
+            <option value="house">Dům</option>
+            <option value="apartment">Byt</option>
+          </select>
+          <input type="number" id="filter-price-min" placeholder="Cena od">
+          <input type="number" id="filter-price-max" placeholder="Cena do">
+          <button type="button" onclick="filterProperties()">Hledat</button>
+        </form>
+      </section>
+
+      <!-- Sekce s nabídkami nemovitostí -->
+      <section id="property-listings">
+        <div class="property" data-type="house" data-price="5000000">
+          <div class="property-image" style="background-color: #ccc; width: 100%; height: 200px;"></div>
+          <h3>Prodej rodinného domu</h3>
+          <p>Cena: 5 000 000 Kč</p>
+          <p>Lokalita: Uherské Hradiště</p>
+        </div>
+
+        <div class="property" data-type="apartment" data-price="3000000">
+          <div class="property-image" style="background-color: #ccc; width: 100%; height: 200px;"></div>
+          <h3>Prodej bytu 2+1</h3>
+          <p>Cena: 3 000 000 Kč</p>
+          <p>Lokalita: Brno</p>
+        </div>
+      </section>
+
+      <div id="center-logo-footer-container">
+        <div id="logo-footer-container">
+          <a class="logo-footer" href="https://www.deriverge.cz/"><img class="logo-footer" src="/pictures/deriverge-logo-rk-final.png"></a>
+        </div>
+      </div>
+      <footer id="navigace-footer-container">
+        <ul id="menu-footer"><span class="navigace-footer">Dokumenty</span>
+          <li class="odkazmenu"><a href="/dokumenty/AML systém vnitřních zásad.pdf" target="_blank">Systém vnitřních zásad AML</a></li>
+          <li class="odkazmenu"><a href="/dokumenty/Obchodní podmínky.pdf" target="_blank">Obchodní podmínky</a></li>
+          <li class="odkazmenu"><a href="/dokumenty/Poučení spotřebitele.pdf" target="_blank">Poučení spotřebitele</a></li>
+          <li class="odkazmenu"><a href="/dokumenty/Zásady ochrany osobních údajů.pdf" target="_blank">Zásady ochrany osobních údajů</a></li>
+        </ul>
+        <ul id="kontakty-footer-ul"><span class="kontakty-footer">Kontakty</span>
+          <li class="phone-ikon"><img id="logo-phone" src="/pictures/phonelogo.png"></li>
+          <li class="phone-menu odkazmenu"><a href="tel:+420777849095">+420 777 849 095</a></li>
+          <li class="phone-ikon"><img id="logo-phone" src="/pictures/email-logo.png"></li>
+          <li class="phone-menu odkazmenu"><a href="mailto:reality@deriverge.cz">reality@deriverge.cz</a></li>
+        </ul>
+      </footer>
+      <footer id="footer">
+        <div id="footer-copyright-center">
+          <span id="copyright">
+            <a id="deriverge" href="https://www.deriverge.com/">www.deriverge.com</a>
+            page by deriverge s.r.o.
+            &copy;2024
+          </span>
+        </div>
+        <div id="poptavkovy-formular-footer">
+          <form id="form" action="https://formspree.io/f/mdoqzvoz" method="POST">
+            <label>
+              <span id="nadpis-formular">Řešíte prodej nebo pronájem nemovitosti? <br>Napište nám o co se jedná.</span><br>
+              <textarea name="message" required placeholder="Dobrý den, chci prodat nemovitost v..."></textarea>
+              <br><br>
+            </label>
+            <div id="center-button-form">
+              <label>
+                <span class="edit-text">Váš email:</span><br>
+                <input type="email" name="email" required placeholder="novakovi@seznam.cz">
+              </label>
+              <button id="button-formular" type="submit">Odeslat</button>
+            </div>
+          </form>
+        </div>
+      </footer>
+      <button id="scrollTopButton" onclick="nahoru()"><span class="scrollTopText">^</span></button>
+    </div>
+    <script src="jquery.min.js"></script>
+    <script src="script.js"></script>
+    <div id="domy-footer-container">
+          <img id="domy-footer" src="/pictures/background-domy.jpg" alt="">
+  </div>
+  </body>
 </html>
