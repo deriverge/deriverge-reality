@@ -1,0 +1,170 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+
+
+.logoMenu {
+    background-image: url(/pictures/deriverge_logo_bege_2.svg);
+    width: 167px;
+    height: 170px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -75px;
+}
+
+
+menu {
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.podstranky ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-right: 20px;
+    padding: 0;
+    width: 900px;
+}
+
+.podstranky ul li,
+.podstranky ul li a{
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+}
+
+footer {
+    height: 300px;
+    background-color: rgb(18, 18, 18);
+    position: absolute;
+    width: 100%;
+}
+
+.omezeni-sirka {
+    display: flex;
+}
+
+.odkazyFooter{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dokumenty li a,
+.kontaktyFooter li a,
+.odkazyFooter ul{
+    color: white;
+    text-decoration: none;
+}
+
+.dokumenty li a:hover,
+.kontaktyFooter li a:hover {
+    color: #5a5a5a;
+}
+
+.mainFoto img{
+max-width: 100%;
+}
+.mainFoto {
+
+}
+
+.textNadpis {
+    position: absolute;
+    top: 93px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 27px;
+}
+
+.oErika,
+.oDavid {
+    display: flex;
+    max-width: 1030px;
+    margin: 0 auto;
+}
+
+.oDavid img,
+.oErika {
+height: 420px;
+width: auto;
+}
+
+.oErika p, 
+.oDavid p {
+    font-size: 1.4em;
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.oMne {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+.rightsBottom {
+    color: white;
+    font-size: 0.8em;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    z-index: 99;
+    margin-top: 257px;    
+}
+
+.rightsBottom p a {
+    
+    color: white;
+}
+
+.partneri {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.logoRealman {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.logoRealman ul {
+    margin-bottom: 48px;
+    padding-left: 17px;
+}
+
+.partneri ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.partneri li {
+    list-style-type: none;
+    margin: 5px;
+}
+
+.partneri ul li img {
+    height: 40px;
+}
+
+#sRealityLogo {
+    height: 23px;
+    padding-top: 14px;
+}
