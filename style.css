@@ -8,7 +8,15 @@ html, body {
     font-style: normal;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+}
 
+.omezeni-sirka {
+width: 1940px;
+justify-content: space-between;
+}
 
 .logoMenu {
     background-image: url(/pictures/deriverge_logo_bege_2.svg);
@@ -55,9 +63,18 @@ footer {
     display: flex;
 }
 
+
+
+.omezeni-sirka-footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .odkazyFooter{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .dokumenty li a,
@@ -65,6 +82,10 @@ footer {
 .odkazyFooter ul{
     color: white;
     text-decoration: none;
+}
+
+.odkazyFooter ul {
+    margin: 0 20px;
 }
 
 .dokumenty li a:hover,
@@ -144,7 +165,7 @@ width: auto;
 
 .logoRealman ul {
     margin-bottom: 48px;
-    padding-left: 17px;
+    margin-left: -20px;
 }
 
 .partneri ul {
@@ -168,3 +189,23 @@ width: auto;
     height: 23px;
     padding-top: 14px;
 }
+
+.sockyFooter li a img {
+    height: 40px;
+}
+
+.sockyFooter li {
+    list-style-type: none;
+    margin-bottom: 17px;
+}
+
+.sockyFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ul.dokumenty {
+    padding-left: 0;
+
+}
+
