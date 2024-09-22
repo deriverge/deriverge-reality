@@ -42,7 +42,10 @@ menu {
     margin: 0;
     margin-right: 20px;
     padding: 0;
-    width: 900px;
+}
+
+.podstranky ul li {
+    margin-left: 20px;
 }
 
 .podstranky ul li,
@@ -97,7 +100,7 @@ footer {
 max-width: 100%;
 }
 .mainFoto {
-
+    text-align: center;
 }
 
 .textNadpis {
@@ -112,7 +115,7 @@ max-width: 100%;
 .oErika,
 .oDavid {
     display: flex;
-    max-width: 1030px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -128,6 +131,7 @@ width: auto;
     display: flex;
     align-items: center;
     padding: 5px 20px;
+    text-align: justify;
 }
 
 .oMne {
@@ -155,6 +159,8 @@ width: auto;
     text-align: center;
     font-size: 1.5em;
     margin-bottom: 10px;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 .logoRealman {
@@ -209,3 +215,128 @@ ul.dokumenty {
 
 }
 
+
+
+.rozdelovacTopFoto {
+    display: flex;
+    justify-content: center;
+    height: 85px;
+    margin-top: -28px;
+}
+
+
+.textAlign {
+    text-align: center;
+}
+
+.sluzbyTopButtons {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.sluzbyTopButtons img {
+    max-height: 215px;
+    margin: 20px 10px 0px 10px;
+    background-color: rgba(255, 255, 255, 0.46)
+}
+
+.containerTopButtons {
+    background-color: #f4f4f4;
+}
+h2 {
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.topButtons {
+    display: flex;
+    flex-direction: column;
+}
+
+.topButtons img {
+    transition: transform 0.5s ease;
+}
+
+.topButtons img:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.topButtons p {
+        padding: 0 10px;
+        text-align: center;
+        font-size: 1.4em;
+        background-color: #ffffff;
+        margin: 0 10px 20px 10px;        
+        min-height: 240px;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .containerFormBottom {
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+    }
+
+    .kontaktniFormular {
+        padding: 20px;
+        min-width: 350px;
+        width: 600px;
+    }
+    
+    .kontaktniFormular h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .kontaktniFormular input,
+    .kontaktniFormular textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: none;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);    }
+    
+    .kontaktniFormular input[type="submit"] {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 10px 20px;
+    }
+    
+    .kontaktniFormular input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+    .vizualizace {
+        display: flex;
+        max-width: 1300px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .viz img{
+        height: 300px;
+    }
+
+    .velkyRozdelovacViz {
+        height: 750px;
+    }
+    
+    .viz {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 620px;
+    }
+
+    .viz p {
+        font-size: 1.4em;
+        padding: 10px;
+    }
