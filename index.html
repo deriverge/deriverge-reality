@@ -20,10 +20,9 @@
                         <li><a href="">Chci prodat</a></li>
                         <li><a href="">Chci pronajmout</a></li>
                         <li><a href="">Chci koupit</a></li>
-                        <li><a href="">Chci si pronajmout</a></li>
-                        <!--<li><a href="">O nás</a></li>-->
-                        <!--<li><a href="">Kontakty</a></li>-->
-                        <!--<li><a href="">Služby</a></li>-->
+                        <li><a href="">O nás</a></li>
+                        <li><a href="">Kontakty</a></li>
+                        <li><a href="">Služby</a></li>
                     </ul>
                 </div>
         </menu>
@@ -39,6 +38,12 @@
     <h1>Manželé a kolegové Čagánkovi.</h1>
     </div>
 
+    <div class="rozdelovacTopFoto">
+        <img src="/icons/maly_rozdelovac.svg" alt="">
+    </div>
+
+    <h2 class="textAlign">Co děláme</h2>
+
     <section class="oMne">
         <article class="oErika">
             <img src="/pictures/erika-cagankova-omne.jpg" alt="krátký článek z pohledu Eriky Čagánkové, realitního makléře na její přístup k realitám. Na fotografii je paní Čagánková a za ní je zděnná budova z červených pálených cihel.">
@@ -51,19 +56,82 @@
         </article>
     </section>
 
-    <section>
-            <div class="partneri">
-                <h3>Partneři</h3>
-                <ul>
-                <li><a href="https://reality.idnes.cz/" target="_blank"><img src="/pictures/logo-reality-idnes-color.svg" alt=""></a></li>
-                <li><a href="https://www.vasnajemnik.cz/" target="_blank"><img src="/pictures/vas_najemnik_logo.svg" alt=""></a></li>
-                <li><a href="https://www.sreality.cz/" target="_blank"><img id="sRealityLogo" src="/pictures/logo-sreality.svg" alt=""></a></li>
-                <li><a href="https://www.vasebudoucnost.cz/" target="_blank"><img src="/pictures/Vase-budoucnost-logo.png" alt=""></a></li>
-                <li><a href="https://www.innogy.cz/" target="_blank"><img src="/pictures/innogy-logo.png" alt=""></a></li>
-                </ul>
-            </div>
+    
+    <h2 class="textAlign">S námi prodáte, pronajmete i koupíte</h2>
+    <div class="containerTopButtons">
+    <section class="sluzbyTopButtons">
+        <div class="prodat topButtons">
+            <img src="/icons/PRODAT.svg" alt="">
+            <p>"Pomůžeme vám rychle a výhodně prodat vaši nemovitost. Využíváme moderní marketingové strategie abychom našli kupce, který ocení vaši nabídku."</p>
+        </div>
+        <div class="pronajmout topButtons">
+            <img src="/icons/PRONAJMOUT.svg" alt="">
+            <p>"Nabízíme kompletní služby při pronájmu vaší nemovitosti. Zajistíme vám seriózní nájemce a postaráme se o všechny detaily, abyste měli co nejméně starostí."</p>
+        </div>
+        <div class="koupit topButtons">
+            <img src="/icons/KOUPIT.svg" alt="">
+            <p>"Najdeme pro vás domov, který bude odpovídat vašim představám. Díky naší rozsáhlé síti kontaktů se můžete spolehnout na bezproblémový proces koupě."</p>
         </div>
     </section>
+    </div>
+
+    <h2 class="textAlign">Nemovitosti prezentujeme s 3D vizualizací</h2>
+    <section class="vizualizace">
+
+        <div class="vizVlevo viz">
+        <img src="/pictures/vizualizace/top_view_2.jpg" alt="">
+        <p class="vizualizaceVlevo2">"Pohodlí a luxus ve vašem vlastním domově. Tento moderní venkovní prostor je ideální pro chvíle odpočinku s rodinou i přáteli. Prostorná terasa s vířivkou nabízí dokonalé místo k relaxaci a užívání si krásných dní na čerstvém vzduchu."</p>
+        </div>
+
+        <img class="velkyRozdelovacViz" src="/icons/rozdelovac_velky.svg" alt="">
+
+        <div class="vizVpravo viz">
+        <p class="vizualizaceVpravo2">"Stylový interiér s promyšlenou dispozicí. Moderní design interiéru klade důraz na funkčnost a pohodlí. Otevřený obývací prostor, který přirozeně propojuje kuchyň, jídelnu a obývací pokoj, poskytuje ideální místo pro společné chvíle i každodenní život."</p>
+        <img src="/pictures/vizualizace/top_view_1.jpg" alt="">
+        </div>
+
+    </section>
+
+
+    <section>
+        <div class="partneri">
+            <h3>Partneři</h3>
+            <ul>
+            <li><a href="https://reality.idnes.cz/" target="_blank"><img src="/pictures/logo-reality-idnes-color.svg" alt=""></a></li>
+            <li><a href="https://www.vasnajemnik.cz/" target="_blank"><img src="/pictures/vas_najemnik_logo.svg" alt=""></a></li>
+            <li><a href="https://www.sreality.cz/" target="_blank"><img id="sRealityLogo" src="/pictures/logo-sreality.svg" alt=""></a></li>
+            <li><a href="https://www.vasebudoucnost.cz/" target="_blank"><img src="/pictures/Vase-budoucnost-logo.png" alt=""></a></li>
+            <li><a href="https://www.innogy.cz/" target="_blank"><img src="/pictures/innogy-logo.png" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+    <div class="containerFormBottom">
+    <section class="kontaktniFormular">
+        <h2>Kontaktujte nás</h2>
+        <form action="process_form.php" method="POST" onsubmit="return validateForm()">
+            <label for="first_name">Jméno:</label><br>
+            <input type="text" id="first_name" name="first_name" required><br><br>
+    
+            <label for="last_name">Příjmení:</label><br>
+            <input type="text" id="last_name" name="last_name" required><br><br>
+    
+            <label for="phone">Telefon:</label><br>
+            <input type="text" id="phone" name="phone"><br><br>
+    
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+    
+            <label for="message">Zpráva:</label><br>
+            <textarea id="message" name="message" required></textarea><br><br>
+    
+            <input type="submit" value="Odeslat">
+        </form>
+    </section>
+    </div>
+    
+
 
     <footer>
         <div class="omezeni-sirka-footer">
@@ -90,9 +158,8 @@
                     <li class="odkazmenu"><a href="">Chci prodat</a></li>
                     <li class="odkazmenu"><a href="">Chci pronajmout</a></li>
                     <li class="odkazmenu"><a href="">Chci koupit</a></li>
-                    <li class="odkazmenu"><a href="">Chci si pronajmout</a></li>
-                    <!--<li class="odkazmenu"><a href="">O nás</a></li>-->
-                    <!--<li class="odkazmenu"><a href="">Služby</a></li>-->
+                    <li class="odkazmenu"><a href="">O nás</a></li>
+                    <li class="odkazmenu"><a href="">Služby</a></li>
                 </ul>
 
                 <ul class="odkazyFooter logoRealman">
