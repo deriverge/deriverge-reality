@@ -36,6 +36,10 @@ menu {
     margin-top: 40px;
 }
 
+.podstranky {
+    margin-right: 30px;
+}
+
 .podstranky ul {
     display: flex;
     justify-content: space-between;
@@ -127,15 +131,14 @@ width: auto;
 
 .oErika p, 
 .oDavid p {
-    font-size: 1.4em;
-    display: flex;
-    align-items: center;
+    font-size: 1em;
     padding: 5px 20px;
     text-align: justify;
+    margin-top: 10%;
 }
 
 .oMne {
-    max-width: 1440px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -161,6 +164,7 @@ width: auto;
     margin-bottom: 10px;
     max-width: 1300px;
     margin: 0 auto;
+    margin-bottom: 21px;
 }
 
 .logoRealman {
@@ -268,7 +272,7 @@ h2 {
 .topButtons p {
         padding: 0 10px;
         text-align: center;
-        font-size: 1.4em;
+        font-size: 1.1em;
         background-color: #ffffff;
         margin: 0 10px 20px 10px;        
         min-height: 240px;
@@ -337,6 +341,146 @@ h2 {
     }
 
     .viz p {
-        font-size: 1.4em;
+        font-size: 1.1em;
+        padding: 10px;
+        text-align: justify;
+    }
+
+    .form-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    
+    .form-group {
+        flex: 1;
+        margin-right: 10%;
+    }
+    
+    .form-group:last-child {
+        margin-right: 0;
+    }
+    
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+    }
+    
+    input[type="submit"] {
+        margin-top: 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+    
+    .podstranky ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .podstranky ul li {
+        display: inline-block;
+    }
+    
+    .podstranky ul li a {
+        position: relative;
+        text-decoration: none;
+        color: black;
         padding: 10px;
     }
+    
+    .podstranky ul li a::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 40px;
+        height: 40px;
+        background-color: #D7D1C6;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: -1; /* Aby bylo kolečko za textem */
+    }
+    
+    .podstranky ul li a.active::before {
+        opacity: 1; /* Zobrazí kolečko za aktivním odkazem */
+    }
+    
+  
+.podstranky ul li a:hover::before {
+    opacity: 1; /* Zobrazí kolečko při najetí myší */
+}
+    
+.size2em {
+    font-size: 1.5em;
+    font-weight: 800;
+}  
+
+/* responzivita pod 1190px */
+.midPc {
+    display: none;
+}
+
+@media screen and (max-width: 1190px){
+    .bigPc{
+    display: none;
+    }
+
+    .midPc {
+        display: flex;
+    }
+}
+
+.oNasObtekani {
+    display: none;
+}
+
+/* responzivita pod 933px */
+
+@media screen and (max-width: 933px){
+    .oErika p, .oDavid p {
+        text-align: left;
+    }
+
+    .oNas {
+        display: none;
+    }
+
+    .oNasObtekani {
+        display: block;
+        margin-bottom: 80px;
+    }
+
+    .oNasObtekani img {
+        float: right;
+        height: 420px;
+        width: auto;
+    }
+}
+
+ul.dropdown-menu {  
+    flex-direction: column;
+    margin-top: 16px;
+    margin-left: -21px;
+    background-color: white;
+    width: 191px;
+    height: auto;
+    position: absolute;
+    z-index: 99;
+    display: none;
+}
+
+ul.dropdown-menu li {
+    margin-bottom: 10px;
+}
