@@ -20,20 +20,65 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-    <header>
+
+
+    <header class="bigPc">
         <menu class="omezeni-sirka">
-            <div class="logoMenu"></div>
-            <div class="podstranky">
-                <ul>
-                    <li><a href="/index.html">Úvod</a></li>
-                    <li><a href="">Chci prodat</a></li>
-                    <li><a href="">Chci pronajmout</a></li>
-                    <li><a href="">Chci koupit</a></li>
-                    <li><a class="active" href="/onas.html">O nás</a></li>
-                    <li><a href="">Kontakty</a></li>
-                    <li><a href="">Služby</a></li>
-                </ul>
-            </div>
+                <div class="logoMenu"></div>
+                <div class="podstranky bigPc">
+                    <ul>
+                        <li><a href="/index.html">Úvod</a></li>
+                        <li><a href="/sluzby.html">Služby</a></li>
+                        <!--<li><a href="">Nemovitosti</a></li>-->
+                        <li><a href="/chci-prodat.html">Chci prodat</a></li>
+                        <li><a href="/chci-pronajmout.html">Chci pronajmout</a></li>
+                        <li><a href="/chci-koupit.html">Chci koupit</a></li>
+                        <li><a class="active" href="/onas.html">O nás</a></li>
+                        <li><a href="/kontakty.html">Kontakty</a></li>
+                    </ul>
+                </div>
+        </menu>
+    </header>
+
+    <header class="midPc">
+        <menu class="omezeni-sirka">
+                <div class="logoMenu"></div>
+                <nav class="podstranky">
+                    <ul>
+                        <li><a href="/index.html">Úvod</a></li>
+                        <li class="dropdown">
+                            <a>Služby</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/chci-prodat.html">Chci prodat</a></li>
+                                <li><a href="/chci-pronajmout.html">Chci pronajmout</a></li>
+                                <li><a href="/chci-koupit.html">Chci koupit</a></li>
+                                <li><a href="/detail-sluzeb.html">Detail služeb</a></li>
+                            </ul>
+                        </li>
+                        <!--<li><a href="/nemovitosti.html">Nemovitosti</a></li>-->
+                        <li><a class="active" href="/onas.html">O nás</a></li>
+                        <li><a href="/kontakty.html">Kontakty</a></li>
+                    </ul>
+                </nav>
+        </menu>
+    </header>
+
+    <header class="mobileMenu">
+        <menu class="omezeni-sirka">
+                <div class="logoMenu"></div>
+                <div class="hamburger" id="hamburger">&#9776;<span class="hamburgerPosun">MENU</span></div>
+                <div class="podstranky activeMobileMenu">
+                    <ul id="mobileMenuPage">
+                        <li><a href="/index.html">Úvod</a></li>
+                        <li><a href="/sluzby.html">Služby</a></li>
+                        <li><a href="">Nemovitosti</a></li>
+                        <li><a href="/chci-prodat.html">Chci prodat</a></li>
+                        <li><a href="/chci-pronajmout.html">Chci pronajmout</a></li>
+                        <li><a href="/chci-koupit.html">Chci koupit</a></li>
+                        <li><a class="active" href="/onas.html">O nás</a></li>
+                        <li><a href="/kontakty.html">Kontakty</a></li>
+                    </ul>
+                </div>
         </menu>
     </header>
 
@@ -153,6 +198,17 @@
                     <li class="odkazmenu"><a href="/dokumenty/Poučení spotřebitele.pdf" target="_blank">Poučení spotřebitele</a></li>
                     <li class="odkazmenu"><a href="/dokumenty/Zásady ochrany osobních údajů.pdf" target="_blank">Zásady ochrany osobních údajů</a></li>
                 </ul>
+                
+                <ul class="kontaktyFooter">
+                    <h3>Navigace</h3>
+                    <li><a href="/index.html">Úvod</a></li>
+                    <li class="odkazmenu"><a href="/sluzby.html">Služby</a></li>
+                    <li class="odkazmenu"><a href="/chci-prodat.html">Chci prodat</a></li>
+                    <li class="odkazmenu"><a href="/chci-pronajmout.html">Chci pronajmout</a></li>
+                    <li class="odkazmenu"><a href="/chci-koupit.html">Chci koupit</a></li>
+                    <li class="odkazmenu"><a href="/onas.html">O nás</a></li>
+                    <li class="odkazmenu"><a href="/kontakty.html">Kontakty</a></li>
+                </ul>
 
                 <ul class="kontaktyFooter">
                     <h3>Kontakty</h3>
@@ -161,15 +217,6 @@
                     <li class="phone-menu odkazmenu"><a href="tel:+420773576543">+420 773 576 543</a></li>
                 </ul>
 
-                <ul class="kontaktyFooter">
-                    <h3>Navigace</h3>
-                    <li><a href="/index.html">Úvod</a></li>
-                    <li class="odkazmenu"><a href="">Chci prodat</a></li>
-                    <li class="odkazmenu"><a href="">Chci pronajmout</a></li>
-                    <li class="odkazmenu"><a href="">Chci koupit</a></li>
-                    <li class="odkazmenu"><a href="">O nás</a></li>
-                    <li class="odkazmenu"><a href="">Služby</a></li>
-                </ul>
 
                 <ul class="odkazyFooter logoRealman">
                     <h3>Softwarový partner</h3>
@@ -196,3 +243,4 @@
     <script src="/script.js"></script>
 </body>
 </html>
+    
