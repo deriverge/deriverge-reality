@@ -5,15 +5,14 @@ $(window).on("pageshow", function(event) {
 });
 
 $(document).ready(function() {
-    // Použijeme hover efekt na hlavní položku "Služby"
-    $(".dropdown").hover(
+    $(".dropdown").click(
         function() {
-            // Zobrazí menu pomocí slideDown při najetí
-            $(this).children(".dropdown-menu").stop(true, true).slideDown(300);
-        },
-        function() {
-            // Skryje menu pomocí slideUp při opuštění
-            $(this).children(".dropdown-menu").stop(true, true).slideUp(300);
+            $(this).children(".dropdown-menu").stop(true, true).slideToggle(300);
         }
     );
 });
+
+$(".hamburger").click(function(){
+    $("#mobileMenuPage").stop(true, true).slideToggle(300);
+});
+
