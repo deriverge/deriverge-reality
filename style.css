@@ -6,6 +6,7 @@ html, body {
     font-optical-sizing: auto;
     font-weight: <weight>;
     font-style: normal;
+    height: 100%;
 }
 
 header {
@@ -57,10 +58,11 @@ menu {
     text-decoration: none;
     list-style-type: none;
     color: black;
+    z-index: 99;
 }
 
 footer {
-    height: 300px;
+    min-height: 305px;
     background-color: rgb(18, 18, 18);
     position: absolute;
     width: 100%;
@@ -113,7 +115,7 @@ max-width: 100%;
     color: white;
     text-align: center;
     width: 100%;
-    font-size: 27px;
+    font-size: 1.69em;
 }
 
 .oErika,
@@ -124,7 +126,7 @@ max-width: 100%;
 }
 
 .oDavid img,
-.oErika {
+.oErika img {
 height: 420px;
 width: auto;
 }
@@ -137,20 +139,23 @@ width: auto;
     margin-top: 10%;
 }
 
-.oMne {
+.oMne.pc {
     max-width: 1000px;
     margin: 0 auto;
 }
 
 
 .rightsBottom {
+    display: flex;
     color: white;
     font-size: 0.8em;
-    width: 100%;
+    justify-content: center;
     text-align: center;
     position: absolute;
     z-index: 99;
-    margin-top: 257px;    
+    width: 100%;
+    text-align: center;
+    margin-top: 260px;
 }
 
 .rightsBottom p a {
@@ -231,6 +236,7 @@ ul.dokumenty {
 
 .textAlign {
     text-align: center;
+    padding: 0px 3px;
 }
 
 .sluzbyTopButtons {
@@ -288,8 +294,8 @@ h2 {
     }
 
     .kontaktniFormular {
-        padding: 20px;
-        min-width: 350px;
+        padding: 37px;
+        min-width: 290px;
         width: 600px;
     }
     
@@ -325,8 +331,8 @@ h2 {
         justify-content: center;
     }
 
-    .viz img{
-        height: 300px;
+    .vizVlevo img {
+        margin-left: 14px;
     }
 
     .velkyRozdelovacViz {
@@ -427,6 +433,86 @@ h2 {
     font-weight: 800;
 }  
 
+/*responzivita pod 1235px*/
+
+@media screen and (max-width: 1234px) {
+    .rightsBottom {
+        margin-top: 365px;
+    }
+
+    footer {
+        min-height: 407px;
+    }
+}
+
+/*responzivita pod 726px*/
+
+@media screen and (max-width: 726px){
+    
+    li.odkazmenu.logoRealman {
+        margin-left: 57px;
+    }
+
+    .odkazyFooter {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .odkazyFooter ul {
+        padding: 0;
+    }
+
+    .rightsBottom {
+        margin-top: 836px;
+    }
+
+    footer {
+        min-height: 900px;
+    }
+
+    .logoRealman ul {
+        margin-bottom: 0;
+    }
+
+
+}
+
+/* responyivita pod 1280px */
+
+@media screen and (max-width: 1281px) {
+    .viz {
+    max-width: 470px;
+    }
+}
+
+/* responyivita pod 998px */
+
+@media screen and (max-width: 998px) {
+    .viz {
+    max-width: 400px;
+    }
+}
+
+/* responyivita pod 847px */
+
+@media screen and (max-width: 847px) {
+    .viz {
+    max-width: 370px;
+    }
+}
+
+/* responyivita pod 800px */
+
+@media screen and (max-width: 847px) {
+    .viz {
+    max-width: 370px;
+    }
+    
+    .velkyRozdelovacViz {
+        display: none;
+    }
+}
+
 /* responzivita pod 1190px */
 .midPc {
     display: none;
@@ -440,6 +526,10 @@ h2 {
     .midPc {
         display: flex;
     }
+
+    .textNadpis {
+        font-size: 2.7vw;
+    }
 }
 
 .oNasObtekani {
@@ -450,6 +540,10 @@ h2 {
 
 @media screen and (max-width: 933px){
     .oErika p, .oDavid p {
+        text-align: left;
+    }
+
+    .viz p {
         text-align: left;
     }
 
@@ -469,9 +563,135 @@ h2 {
     }
 }
 
+/*responzivita pod 750px*/
+.mobileMenu {
+    display: none;
+}
+
+.vizualizace.mobile {
+    display: none;
+}
+
+@media screen and (max-width: 750px){
+    .midPc {
+        display: none;
+    }
+
+    .omezeni-sirka {
+        padding-right: 20px;
+    }
+
+    .bigPc {
+        display: none;
+    }
+    
+    .mobileMenu {
+        display: flex;
+    }
+
+    .activeMobileMenu {
+        position: absolute;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.94);
+        width: 100%;
+        height: fit-content;
+        left: 0;
+        top: 96px;
+        z-index: 999;
+        text-align: center;
+        line-height: 32px;
+        padding: 0;
+    }
+
+    .vizualizace.pc{
+        display: none;
+    }
+
+    .vizualizace.mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sluzbyTopButtons {
+        flex-direction: column;
+        max-width: 350px;
+    }
+}
+
+#mobileMenuPage {
+    display: flex;
+    display: none;
+    flex-direction: column;
+    margin: 20px 0;
+    flex-direction: column;
+}
+
+#mobileMenuPage li {
+    width: 100%;
+    margin: 10px 0;
+}
+
+/*responzivita pod 700px*/
+
+.oMne.mobile{
+    display: none;
+}
+
+@media  screen and (max-width: 700px) {
+    .oMne.pc {
+        display: none;
+    }
+    
+    .oMne.mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .oErika, .oDavid {
+        max-width: auto;
+        flex-direction: column;
+    }
+
+    .oDavid img, .oErika img {
+        max-width: 59%;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .oErika p, .oDavid p {
+        margin-top: 0%;
+        padding: 0 5%;
+    }
+
+    .logoMenu {
+        width: 125px;
+        margin-left: -22px;
+    }
+}
+
+/*responzivita pod 650px*/
+
+@media  screen and (max-width: 700px) {
+    .videaMain iframe {
+        width: 373px;
+        height: 210px;
+    }
+}
+
+/*responzivita pod 390px*/
+
+@media  screen and (max-width: 390px) {
+    .videaMain iframe {
+        width: 329px;
+        height: 185px;
+    }
+
+}
+
 ul.dropdown-menu {  
     flex-direction: column;
-    margin-top: 16px;
+    margin-top: 27px;
     margin-left: -21px;
     background-color: white;
     width: 191px;
@@ -479,8 +699,19 @@ ul.dropdown-menu {
     position: absolute;
     z-index: 99;
     display: none;
+    z-index: 98;
 }
 
 ul.dropdown-menu li {
     margin-bottom: 10px;
+}
+
+.videaMain {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px 0;
+}
+
+.oNasObtekani p {
+    padding: 0 20px;
 }
