@@ -7,6 +7,7 @@ html, body {
     font-weight: <weight>;
     font-style: normal;
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -247,6 +248,7 @@ ul.dokumenty {
 }
 
 .sluzbyTopButtons img {
+    min-width: -webkit-fill-available;
     max-height: 215px;
     margin: 20px 10px 0px 10px;
     background-color: rgba(255, 255, 255, 0.46)
@@ -267,6 +269,7 @@ h2 {
 
 .topButtons img {
     transition: transform 0.5s ease;
+    margin-bottom: -4px;
 }
 
 .topButtons img:hover {
@@ -714,4 +717,33 @@ ul.dropdown-menu li {
 
 .oNasObtekani p {
     padding: 0 20px;
+}
+
+.kontaktyContainer img {
+    max-height: 420px;
+}
+
+.kontaktyContainer {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+
+.kontaktyContainer a:hover {
+    color: #D7D1C6;
+}
+
+.kontaktyContainer a {
+    font-size: 1.5em;
+    font-weight: 800;
+    color: black;
+    text-decoration: overline;
+}
+
+.davidKontakty,
+.erikaKontakty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
