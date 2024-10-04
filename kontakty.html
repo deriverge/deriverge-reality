@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <title>deriverge | realitní kancelář</title>
+    <meta name="description" content="Realitní služby">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="clearfix.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="/favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="/favicon_package_v0.16/safari-pinned-tab.svg" color="#d7d1c6">
+    <meta name="msapplication-TileColor" content="#d7d1c6">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+
+
+    <header class="bigPc">
+        <menu class="omezeni-sirka">
+                <div class="logoMenu"></div>
+                <div class="podstranky bigPc">
+                    <ul>
+                        <li><a href="/index.html">Úvod</a></li>
+                        <li><a href="index.html#oErika">Služby</a></li>
+                        <li><a href="https://www.sreality.cz/adresar/deriverge-realitni-kancelar-korytna/71882" target="_blank">Nemovitosti</a></li>
+                        <li><a href="#formularBottom">Chci prodat</a></li>
+                        <li><a href="#formularBottom">Chci pronajmout</a></li>
+                        <li><a href="#formularBottom">Chci koupit</a></li>
+                        <li><a href="/onas.html">O nás</a></li>
+                        <li><a class="active" href="/kontakty.html">Kontakty</a></li>
+                    </ul>
+                </div>
+        </menu>
+    </header>
+
+    <header class="midPc">
+        <menu class="omezeni-sirka">
+                <div class="logoMenu"></div>
+                <nav class="podstranky">
+                    <ul>
+                        <li><a href="/index.html">Úvod</a></li>
+                        <li class="dropdown">
+                            <a>Služby</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#formularBottom">Chci prodat</a></li>
+                                <li><a href="#formularBottom">Chci pronajmout</a></li>
+                                <li><a href="#formularBottom">Chci koupit</a></li>
+                                <!--<li><a href="/detail-sluzeb.html">Detail služeb</a></li>-->
+                            </ul>
+                        </li>
+                        <li><a href="">Nemovitosti</a></li>
+                        <li><a href="/onas.html">O nás</a></li>
+                        <li><a class="active" href="/kontakty.html">Kontakty</a></li>
+                    </ul>
+                </nav>
+        </menu>
+    </header>
+
+    <header class="mobileMenu">
+        <menu class="omezeni-sirka">
+                <div class="logoMenu"></div>
+                <div class="hamburger" id="hamburger">&#9776;<span class="hamburgerPosun">MENU</span></div>
+                <div class="podstranky activeMobileMenu">
+                    <ul id="mobileMenuPage">
+                        <li><a href="/index.html">Úvod</a></li>
+                        <li><a href="index.html#oErika">Služby</a></li>
+                        <li><a href="https://www.sreality.cz/adresar/deriverge-realitni-kancelar-korytna/71882" target="_blank">Nemovitosti</a></li>
+                        <li><a href="#formularBottom">Chci prodat</a></li>
+                        <li><a href="#formularBottom">Chci pronajmout</a></li>
+                        <li><a href="#formularBottom">Chci koupit</a></li>
+                        <li><a href="/onas.html">O nás</a></li>
+                        <li><a class="active" href="/kontakty.html">Kontakty</a></li>
+                    </ul>
+                </div>
+        </menu>
+    </header>
+
+    
+    <div class="kontaktyContainer">
+        <div class="erikaKontakty">
+        <img src="/pictures/erika-cagankova-omne.jpg" alt="">
+        <a href="tel:+420773576543">+420 773 576 543</a>
+        </div>
+        <div class="davidKontakty">
+            <img src="/pictures/david-caganek-omne.jpg" alt="">
+            <a href="tel:+420777849095">+420 777 849 095</a>
+        </div>
+    </div>
+
+<br>
+<br>
+
+    <section>
+        <div class="partneri">
+            <h3>Partneři</h3>
+            <ul>
+            <li><a href="https://reality.idnes.cz/" target="_blank"><img src="/pictures/logo-reality-idnes-color.svg" alt=""></a></li>
+            <li><a href="https://www.vasnajemnik.cz/" target="_blank"><img src="/pictures/vas_najemnik_logo.svg" alt=""></a></li>
+            <li><a href="https://www.sreality.cz/" target="_blank"><img id="sRealityLogo" src="/pictures/logo-sreality.svg" alt=""></a></li>
+            <li><a href="https://www.vasebudoucnost.cz/" target="_blank"><img src="/pictures/Vase-budoucnost-logo.png" alt=""></a></li>
+            <li><a href="https://www.innogy.cz/" target="_blank"><img src="/pictures/innogy-logo.png" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<div id="formularBottom" class="containerFormBottom">
+    <section class="kontaktniFormular">
+        <h2>Kontaktujte nás</h2>
+        <form action="process_form.php" method="POST" onsubmit="return validateForm()">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="first_name">Jméno:</label>
+                    <input type="text" id="first_name" name="first_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last_name">Příjmení:</label>
+                    <input type="text" id="last_name" name="last_name" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="phone">Telefon:</label>
+                    <input type="text" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+            </div>
+            <label for="message">Zpráva:</label>
+            <textarea id="message" name="message" required></textarea>
+            <input type="submit" value="Odeslat">
+        </form>
+    </section>
+</div>
+
+    
+
+
+    <footer>
+        <div class="omezeni-sirka-footer">
+            <div class="logoFooter"></div>
+
+            <div class="odkazyFooter">
+                <ul class="dokumenty">
+                    <h3>Dokumenty ke stažení</h3>
+                    <li class="odkazmenu"><a href="/dokumenty/AML systém vnitřních zásad.pdf" target="_blank">Systém vnitřních zásad AML</a></li>
+                    <li class="odkazmenu"><a href="/dokumenty/Obchodní podmínky.pdf" target="_blank">Obchodní podmínky</a></li>
+                    <li class="odkazmenu"><a href="/dokumenty/Poučení spotřebitele.pdf" target="_blank">Poučení spotřebitele</a></li>
+                    <li class="odkazmenu"><a href="/dokumenty/Zásady ochrany osobních údajů.pdf" target="_blank">Zásady ochrany osobních údajů</a></li>
+                    <li class="odkazmenu"><a href="/dokumenty/eticky_kodex_realitni_kancelare-deriverge.pdf" target="_blank">Etický kodex</a></li>
+                </ul>
+                
+                <ul class="kontaktyFooter">
+                    <h3>Navigace</h3>
+                    <li class="odkazmenu"><a href="/index.html">Úvod</a></li>
+                    <li class="odkazmenu"><a href="#oErika">Služby</a></li>
+                    <li class="odkazmenu"><a href="https://www.sreality.cz/adresar/deriverge-realitni-kancelar-korytna/71882" target="_blank">Nemovitosti</a></li>
+                    <li class="odkazmenu"><a href="/chci-prodat.html">Chci prodat</a></li>
+                    <li class="odkazmenu"><a href="/chci-pronajmout.html">Chci pronajmout</a></li>
+                    <li class="odkazmenu"><a href="/chci-koupit.html">Chci koupit</a></li>
+                    <li class="odkazmenu"><a href="/onas.html">O nás</a></li>
+                    <li class="odkazmenu"><a href="/kontakty.html">Kontakty</a></li>
+                </ul>
+
+                <ul class="kontaktyFooter">
+                    <h3>Kontakty</h3>
+                    <li class="phone-menu odkazmenu"><a href="mailto:reality@deriverge.cz">reality@deriverge.cz</a></li>
+                    <li class="phone-menu odkazmenu"><a href="tel:+420777849095">+420 777 849 095</a></li>
+                    <li class="phone-menu odkazmenu"><a href="tel:+420773576543">+420 773 576 543</a></li>
+                </ul>
+
+
+                <ul class="odkazyFooter logoRealman">
+                    <h3>Softwarový partner</h3>
+                    <ul>
+                    <li class="odkazmenu logoRealman"><a href="https://www.realman.cz/" target="_blank"><img src="/pictures/logo-realman.webp" alt=""></a></li>
+                    </ul>
+                </ul>
+
+                <ul class="odkazyFooter sockyFooter">
+                    <h3>Sledujte nás</h3>
+                    <li><a href="https://www.facebook.com/deriverge/" target="_blank"><img src="/icons/fb-ico.svg" alt=""></a></li>
+                    <li><a href="https://www.instagram.com/deriverge_reality/" target="_blank"><img src="/icons/ig-ico (1).svg" alt=""></a></li>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+
+    <div class="rightsBottom">
+        <p>2024 © deriverge s.r.o., všechna práva vyhrazena | web vytvořil <a href="https://www.deriverge.com/" target="_blank">www.deriverge.com</a></p>
+    </div>
+    
+    <script src="/jquery.min.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
