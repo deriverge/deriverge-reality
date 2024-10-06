@@ -14,6 +14,7 @@ html, body {
 header {
     display: flex;
     justify-content: center;
+    z-index: 99;
 }
 
 .omezeni-sirka {
@@ -74,7 +75,15 @@ footer {
     display: flex;
 }
 
-
+header.bigPc,
+header.midPc,
+header.mobileMenu { 		
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
 
 .omezeni-sirka-footer {
     display: flex;
@@ -104,6 +113,10 @@ footer {
     color: #5a5a5a;
 }
 
+.mainFotoContainer {
+    margin-top: 50px;
+}
+
 .mainFoto img{
 max-width: 100%;
 }
@@ -113,11 +126,11 @@ max-width: 100%;
 
 .textNadpis {
     position: absolute;
-    top: 93px;
+    top: 51px;
     color: white;
     text-align: center;
     width: 100%;
-    font-size: 1.69em;
+    font-size: 2.5em;
 }
 
 .oErika,
@@ -548,7 +561,9 @@ h2 {
     .midPc {
         display: flex;
     }
-
+}
+/* responzivita pod 1680px */
+@media screen and (max-width: 1680px){
     .textNadpis {
         font-size: 2.7vw;
     }
