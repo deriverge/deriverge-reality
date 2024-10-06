@@ -272,6 +272,9 @@ ul.dokumenty {
     max-height: 215px;
     margin: 20px 10px 0px 10px;
     background-color: rgba(255, 255, 255, 0.46)
+    width: 100%; /* Přizpůsobí šířku kontejneru */
+    height: auto; /* Zachová poměr stran */
+    max-width: 200px; /* Nastaví maximální šířku pro zachování kvality */
 }
 
 .containerTopButtons {
