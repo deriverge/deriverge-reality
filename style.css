@@ -824,3 +824,30 @@ span.hamburgerPosun {
         width: 100%;
     }
 }
+
+button#scrollTopButton:hover {
+    cursor: pointer;
+}
+
+button#scrollTopButton {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin: 0;
+    border: none;
+    padding: 0;
+    display: flex;
+    position: fixed;
+    z-index: 999999;
+    right: 30px;
+    bottom: 30px;
+    justify-content: center;
+    background-color: rgba(40, 40, 40, 0.7);
+  }
+  
+  .scrollTopText {
+    color: #ffffff;
+    margin-top: 5px;
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+  }
