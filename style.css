@@ -11,6 +11,12 @@ html, body {
     background-color: #fff;
 }
 
+img {
+    image-rendering: optimizeQuality;
+    image-rendering: -webkit-optimize-contrast;
+    filter: brightness(0) invert(1); /* Pro inverzi barev */
+}
+
 header {
     display: flex;
     justify-content: center;
