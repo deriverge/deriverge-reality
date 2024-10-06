@@ -12,9 +12,28 @@ $(document).ready(function() {
     );
 });
 
-$(".hamburger").click(function(){
+$(document).click(function(event) {
+    // Pokud není kliknuto na .hamburger nebo #mobileMenuPage, zavři menu
+    if (!$(event.target).closest('.hamburger, #mobileMenuPage').length) {
+        $("#mobileMenuPage").stop(true, true).slideUp(300);
+    }
+});
+
+$(document).scroll(function(event) {
+    // Pokud není kliknuto na .hamburger nebo #mobileMenuPage, zavři menu
+    if (!$(event.target).closest('.hamburger, #mobileMenuPage').length) {
+        $("#mobileMenuPage").stop(true, true).slideUp(300);
+    }
+});
+
+// Pro samotné hamburger menu zachováme původní akci
+$(".hamburger").click(function(event) {
+    event.stopPropagation(); // Zabráníme šíření události kliknutí
     $("#mobileMenuPage").stop(true, true).slideToggle(300);
 });
+
+
+
 
 //scroll top button start
 const scrollButton = document.getElementById("scrollTopButton");
