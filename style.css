@@ -34,9 +34,9 @@ justify-content: space-between;
 
 menu {
     display: flex;
-    height: 40px;
+    height: 28px;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-top: 24px;
 }
 
 .podstranky {
@@ -315,6 +315,7 @@ h2 {
         margin-bottom: 10px;
         border: none;
         box-shadow: inset 0px 0px 2px 1px rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
     }
     
     .kontaktniFormular input[type="submit"] {
@@ -323,6 +324,13 @@ h2 {
         border: none;
         cursor: pointer;
         padding: 10px 20px;
+        margin-left: 6px;
+        border-radius: 2px;
+    }
+
+    input[type="submit"] {
+        max-width: 98%;
+        display: flex;
     }
     
     .kontaktniFormular input[type="submit"]:hover {
@@ -358,14 +366,18 @@ h2 {
     }
 
     textarea#message {
-        max-width: 97%;
+        max-width: 96%;
     }
 
     .form-row {
         display: flex;
         justify-content: space-between;
         margin-bottom: 15px;
-        overflow: hidden;
+    }
+
+    input#last_name,
+    input#email {
+        width: 90%;
     }
     
     .form-group {
@@ -606,7 +618,7 @@ h2 {
         width: 100%;
         height: fit-content;
         left: 0;
-        top: 96px;
+        top: 49px;
         z-index: 999;
         text-align: center;
         line-height: 32px;
@@ -696,6 +708,11 @@ h2 {
     .partneri ul li img {
         height: 17px;
     }
+
+    menu {
+        height: 19px;
+        margin-top: 15px;
+    }
     
 }
 
@@ -705,10 +722,6 @@ h2 {
     .videaMain iframe {
         width: 329px;
         height: 185px;
-    }
-
-    textarea#message {
-        max-width: 94%;
     }
 
 }
