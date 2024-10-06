@@ -887,3 +887,8 @@ button#scrollTopButton {
     font-size: 60px;
     font-family: 'Courier New', Courier, monospace;
   }
+
+  img {
+    image-rendering: optimizeQuality !important;
+    image-rendering: -webkit-optimize-contrast !important;
+}
