@@ -780,7 +780,7 @@ ul.dropdown-menu li {
 
 .kontaktyContainer {
     display: flex;
-    width: 100vw;
+    width: 100%;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 68px;
