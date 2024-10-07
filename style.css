@@ -345,6 +345,8 @@ h2 {
         padding: 10px 20px;
         margin-left: 6px;
         border-radius: 2px;
+        text-align: center;
+        font-weight: 600;
     }
 
     input[type="submit"] {
